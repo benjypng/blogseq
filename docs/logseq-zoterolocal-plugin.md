@@ -42,7 +42,7 @@ Connect locally to Zotero 7 (and above) and pull your items into Logseq without 
    - Go to any page that will hold your Zotero template.
    - Type `/Insert Zotero template`.
    - A sample template will be generated (example below). Customize as needed.
-   > Note: The <% notes %> should not be in the page properties as the content can be very long
+   > Note: The `<% notes %>` should not be in the page properties as the content can be very long
    - If you change the template name, update it in the plugin settings.
 
 ```

@@ -6,41 +6,6 @@
 
 This super simple plugin uses NLP to parse your content for dates and times so that they can be easily tracked through your yournal pages.
 
-## Toolbar
-
-![](/screenshots/toolbar-demo.gif)
-
-*Navigate*
-
-Click on `Today`, or the left/right chevrons to navigate to today's journal page or the next or previous days'.
-
-*Weekly View*
-
-1. Ensure the correct start day of week is selected in the plugin settings. 
-2. Click on `Week <number>` to navigate to the weekly view.
-3. This will create:
-   - A page in the format `YYYY/Week XX`
-   - Page embeds for all the dates in that week
-
-![](/screenshots/toolbar.png)
-
-
-## Simple Parsing
-
-![](/screenshots/demo.gif)
-
-## Complex Parsing with Scheduled and Deadline options
-
-![](/screenshots/demo2.gif)
-
-## Auto Inline Parsing
-
-As per the video, use `%enable auto-parsing%` to turn on auto parsing (off by default) and `%disable auto-parsing%` to turn it off.
-
-Or, you can just use the hotkey combination `a p` to toggle auto-parsing on and off.
-
-![](/screenshots/demo3.gif)
-
 ## Semi-auto Inline Parsing
 
 Like auto inline-parsing, but this time the parsing is triggered only if the date/time language is prefixed with an `@`, `%` or `^`. Without the prefix, the block will not auto-parse. The available prefixes are:
@@ -51,13 +16,13 @@ Like auto inline-parsing, but this time the parsing is triggered only if the dat
 
 You can use the hotkey combination `s p` to toggle semi-auto-parsing on and off. See the video below for instructions:
 
-![](/screenshots/demo6.gif)
+![](/screenshots/demo3.gif)
 
 ## Using the Command Palette
 
 Use `Ctrl + Shift + p` for Windows or `Cmd + Shift + p` for Mac. Then type `@goto` and select the first option that comes up. You will be presented with a search box to enter the day or date you want to go to.
 
-![](/screenshots/demo5.gif)
+![](/screenshots/demo2.gif)
 
 ## Changing languages
 
@@ -79,7 +44,7 @@ Add the following line inside the plugin settings, and change the language accor
     }
 ```
 
-![](/screenshots/demo4.gif)
+![](/screenshots/demo1.gif)
 
 # Installation
 
