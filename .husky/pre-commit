@@ -1,0 +1,2 @@
+echo 'Running docusaurus build'
+npx docusaurus build

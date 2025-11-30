@@ -25,6 +25,11 @@ const config: Config = {
   projectName: "blogseq", // Usually your repo name.
   deploymentBranch: "gh-pages",
   trailingSlash: false,
+  markdown: {
+    hooks: {
+      onBrokenMarkdownImages: "ignore",
+    },
+  },
 
   onBrokenLinks: "throw",
 
