@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkblogseq=globalThis.webpackChunkblogseq||[]).push([[999],{9503:e=>{e.exports=JSON.parse('{"authors":[{"name":"Benjamin Png","title":"Maker of Logseq plugins","url":"https://github.com/benjypng","page":{"permalink":"/blogseq/blog/authors/benjypng"},"key":"benjypng","count":1}]}')}}]);
