@@ -5,11 +5,9 @@ slug: /
 
 # Introduction
 
-This site hosts the documentation for the various [Logseq](https://logseq.com) plugins developed by [benjypng](https://github.com/benjypng?tab=repositories&q=logseq&type=&language=&sort=)
+This site hosts the documentation for the various [Logseq](https://logseq.com) plugins developed by [benjypng](https://github.com/benjypng?tab=repositories&q=logseq&type=&language=&sort=).
 
-### Getting Started
-
-Navigate to the plugin using the left sidebar to start.
+It also contains a [blog](/blog) to record my thoughts on the progress of Logseq's development.
 
 ### PRs
 
