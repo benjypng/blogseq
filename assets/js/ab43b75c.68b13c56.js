@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkseqlog=globalThis.webpackChunkseqlog||[]).push([[552],{4294:e=>{e.exports=JSON.parse('{"authors":[{"name":"benjypng","url":"https://github.com/benjypng","page":{"permalink":"/seqlog/authors/benjypng"},"key":"benjypng","count":3}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkseqlog=globalThis.webpackChunkseqlog||[]).push([[903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/seqlog/","blogTitle":"Blog","authorsListPath":"/seqlog/authors"}')}}]);

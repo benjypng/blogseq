@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://benjypng.github.io/blogseq</id>
-    <title>Blogseq Blog</title>
+    <id>https://benjypng.github.io/seqlog</id>
+    <title>SeqLog Blog</title>
     <updated>2025-12-03T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://benjypng.github.io/blogseq"/>
-    <subtitle>Blogseq Blog</subtitle>
-    <icon>https://benjypng.github.io/blogseq/img/favicon.ico</icon>
+    <link rel="alternate" href="https://benjypng.github.io/seqlog"/>
+    <subtitle>SeqLog Blog</subtitle>
+    <icon>https://benjypng.github.io/seqlog/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Trying out Gemini Jules]]></title>
-        <id>https://benjypng.github.io/blogseq/2025/12/03/trying-out-gemini-jules</id>
-        <link href="https://benjypng.github.io/blogseq/2025/12/03/trying-out-gemini-jules"/>
+        <id>https://benjypng.github.io/seqlog/2025/12/03/trying-out-gemini-jules</id>
+        <link href="https://benjypng.github.io/seqlog/2025/12/03/trying-out-gemini-jules"/>
         <updated>2025-12-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[My OpenAI subscription was ending, and given the recent hype around Nano Banana Pro, I decided to switch over to Gemini. I've never heard of Jules but since I am in the midst of documenting my plugins better, I decided to give it a try.]]></summary>
         <content type="html"><![CDATA[<p>My OpenAI subscription was ending, and given the recent hype around Nano Banana Pro, I decided to switch over to Gemini. I've never heard of <a href="https://jules.google.com/" target="_blank" rel="noopener noreferrer" class="">Jules</a> but since I am in the midst of documenting my plugins better, I decided to give it a try.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aim">Aim<a href="https://benjypng.github.io/blogseq/2025/12/03/trying-out-gemini-jules#aim" class="hash-link" aria-label="Direct link to Aim" title="Direct link to Aim" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aim">Aim<a href="https://benjypng.github.io/seqlog/2025/12/03/trying-out-gemini-jules#aim" class="hash-link" aria-label="Direct link to Aim" title="Direct link to Aim" translate="no">​</a></h3>
 <p>See if it is any good at doing up <code>README</code>s for my plguins.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="setting-up">Setting Up<a href="https://benjypng.github.io/blogseq/2025/12/03/trying-out-gemini-jules#setting-up" class="hash-link" aria-label="Direct link to Setting Up" title="Direct link to Setting Up" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="setting-up">Setting Up<a href="https://benjypng.github.io/seqlog/2025/12/03/trying-out-gemini-jules#setting-up" class="hash-link" aria-label="Direct link to Setting Up" title="Direct link to Setting Up" translate="no">​</a></h3>
 <ol>
 <li class="">Sign up for a paid Gemini account</li>
 <li class="">Navigate to <a href="https://jules.google.com/" target="_blank" rel="noopener noreferrer" class="">https://jules.google.com</a></li>
@@ -24,7 +24,7 @@
 <li class="">Select plugin repository</li>
 <li class="">Prompt Jules to create a <code>README</code></li>
 </ol>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="results">Results<a href="https://benjypng.github.io/blogseq/2025/12/03/trying-out-gemini-jules#results" class="hash-link" aria-label="Direct link to Results" title="Direct link to Results" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="results">Results<a href="https://benjypng.github.io/seqlog/2025/12/03/trying-out-gemini-jules#results" class="hash-link" aria-label="Direct link to Results" title="Direct link to Results" translate="no">​</a></h3>
 <p>It started off by trying to run <code>npm run build</code>, which failed for some reason. It then tried <code>npm run install</code> and then <code>npm run build</code>. But since it has no Logseq instance to attach to, I doubt that it will have been any useful. But it then started suggesting changes to the existing <code>README</code>, and proposed a <a href="https://github.com/benjypng/logseq-mediatimestamp-plugin/pull/1" target="_blank" rel="noopener noreferrer" class="">PR</a>. I okay-ed and it proceeded to create a branch for the PR and inserted a comment:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">👋 Jules, reporting for duty! I'm here to lend a hand with this pull request.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">When you start a review, I'll add a 👀 emoji to each comment to let you know I've read it. I'll focus on feedback directed at me and will do my best to stay out of conversations between you and other bots or reviewers to keep the noise down.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">I'll push a commit with your requested changes shortly after. Please note there might be a delay between these steps, but rest assured I'm on the job!</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">For more direct control, you can switch me to Reactive Mode. When this mode is on, I will only act on comments where you specifically mention me with @jules. You can find this option in the Pull Request section of your global Jules UI settings. You can always switch back!</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">For security, I will only act on instructions from the user who triggered this task.</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">New to Jules? Learn more at jules.google/docs.</span><br></span></code></pre></div></div>
 <p>Since it is just a <code>README</code>, I went ahead to merge the PR and the final result is as per below. Interestingly, it even generated shields for the README. Some parts are not entirely accurate, but I would say it did a pretty good job. Will definitely continue to try it out.</p>
@@ -36,15 +36,15 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Creating the logseq-mediaplayer-plugin]]></title>
-        <id>https://benjypng.github.io/blogseq/2025/12/01/creating-the-mediaplyer-plugin</id>
-        <link href="https://benjypng.github.io/blogseq/2025/12/01/creating-the-mediaplyer-plugin"/>
+        <id>https://benjypng.github.io/seqlog/2025/12/01/creating-the-mediaplyer-plugin</id>
+        <link href="https://benjypng.github.io/seqlog/2025/12/01/creating-the-mediaplyer-plugin"/>
         <updated>2025-12-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[A user on Discord asked about an older plugin that allows a user to insert timestamps for their own uploaded videos. This is natively available for embedded YouTube videos, but not uploaded files.]]></summary>
         <content type="html"><![CDATA[<p>A user on Discord asked about an older plugin that allows a user to insert timestamps for their own uploaded videos. This is natively available for embedded YouTube videos, but not uploaded files.</p>
 <p>I can't recall what was the older plugin, but given that locally uploaded media files are rendered in HTML, it should be relatively straightforward to derive and set the <code>currentTime</code> through the DOM.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scaffolding">Scaffolding<a href="https://benjypng.github.io/blogseq/2025/12/01/creating-the-mediaplyer-plugin#scaffolding" class="hash-link" aria-label="Direct link to Scaffolding" title="Direct link to Scaffolding" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scaffolding">Scaffolding<a href="https://benjypng.github.io/seqlog/2025/12/01/creating-the-mediaplyer-plugin#scaffolding" class="hash-link" aria-label="Direct link to Scaffolding" title="Direct link to Scaffolding" translate="no">​</a></h3>
 <p>The plugin SDK has been updated to <code>v0.2.8</code>. I've also decided to use <code>npm</code> instead of <code>pnpm</code> for development due to stability purposes.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="approach">Approach<a href="https://benjypng.github.io/blogseq/2025/12/01/creating-the-mediaplyer-plugin#approach" class="hash-link" aria-label="Direct link to Approach" title="Direct link to Approach" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="approach">Approach<a href="https://benjypng.github.io/seqlog/2025/12/01/creating-the-mediaplyer-plugin#approach" class="hash-link" aria-label="Direct link to Approach" title="Direct link to Approach" translate="no">​</a></h3>
 <p>There should be 2 main features for the plugin:</p>
 <ol>
 <li class="">Inserting timestamps</li>
@@ -53,9 +53,9 @@
 <p>The most straightforward way (in my mind), is to access the DOM, and manipulate the <code>&lt;video&gt;</code> element directly. For simplicity, the plugin will have to be opinionated in how it inserts timestamps. <strong>Timestamps must be created as child blocks of the parent block where the video was inserted</strong>. The plugin can then simply query the parent block when the user triggers a slach command to insert the timestamp.</p>
 <p>After getting the <code>uuid</code> of the parent block, the plugin can use a <code>querySelector</code> to query the element since all blocks in logseq have a <code>div id</code> in the pattern <code>ls-block-&lt;uuid&gt;</code>. From here, it was relatively straightforward to obtain the <code>currentTime</code>.</p>
 <p>In order for the user to navigate to a specific time in the video, the user will need to either click on a link or a button. In this case, a link will not be suitable since it is not trivial to use the link to manipulate a DOM element. Hence, I decided to use a button instead. This necessitated the use of <code>onMacroRendererSlotted</code> to render the button and assign a function to it. Once again, this is relatively straightforward with the API, since it allows user-defined values to be passed as function arguments.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://benjypng.github.io/blogseq/2025/12/01/creating-the-mediaplyer-plugin#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://benjypng.github.io/seqlog/2025/12/01/creating-the-mediaplyer-plugin#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h3>
 <p>The plugin was created quite quickly since the features are straightforward. To try it out, you may download the <a href="https://github.com/benjypng/logseq-mediatimestamp-plugin/releases" target="_blank" rel="noopener noreferrer" class="">release</a> and manually load it in Logseq.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="caveat">Caveat<a href="https://benjypng.github.io/blogseq/2025/12/01/creating-the-mediaplyer-plugin#caveat" class="hash-link" aria-label="Direct link to Caveat" title="Direct link to Caveat" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="caveat">Caveat<a href="https://benjypng.github.io/seqlog/2025/12/01/creating-the-mediaplyer-plugin#caveat" class="hash-link" aria-label="Direct link to Caveat" title="Direct link to Caveat" translate="no">​</a></h3>
 <p>Publishing plugins to the Logseq marketplace requires defining a <code>manifest.json</code>. For plugins that access the Logseq DOM, instead of just the sandbox iframe, it requires adding <code>effect: true</code>. I am not sure if this is the case still as I have not tried publishing this plugin to the marketplace yet.</p>]]></content>
         <author>
             <name>benjypng</name>
@@ -64,23 +64,23 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Experience using Logseq in the last 2 weeks]]></title>
-        <id>https://benjypng.github.io/blogseq/2025/11/28/first-blog-post</id>
-        <link href="https://benjypng.github.io/blogseq/2025/11/28/first-blog-post"/>
+        <id>https://benjypng.github.io/seqlog/2025/11/28/first-blog-post</id>
+        <link href="https://benjypng.github.io/seqlog/2025/11/28/first-blog-post"/>
         <updated>2025-11-28T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[I have been using Logseq DB for the past 2 weeks across 4 devices]]></summary>
         <content type="html"><![CDATA[<p>I have been using Logseq DB for the past 2 weeks across 4 devices: 2 Macbooks, 1 iPad and 1 iPhone. Below are my findings:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stability">Stability<a href="https://benjypng.github.io/blogseq/2025/11/28/first-blog-post#stability" class="hash-link" aria-label="Direct link to Stability" title="Direct link to Stability" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="stability">Stability<a href="https://benjypng.github.io/seqlog/2025/11/28/first-blog-post#stability" class="hash-link" aria-label="Direct link to Stability" title="Direct link to Stability" translate="no">​</a></h3>
 <p>Sync has been much more stable across my devices, compared to the MD version. Behaviour is more consistent, and my data syncs more reliably. There are occassions where I've had to manually trigger a sync (using the <code>Sync Now</code> button) but other than that, I've not experienced any data loss so far.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="iosipados-app">iOS/iPadOS app<a href="https://benjypng.github.io/blogseq/2025/11/28/first-blog-post#iosipados-app" class="hash-link" aria-label="Direct link to iOS/iPadOS app" title="Direct link to iOS/iPadOS app" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="iosipados-app">iOS/iPadOS app<a href="https://benjypng.github.io/seqlog/2025/11/28/first-blog-post#iosipados-app" class="hash-link" aria-label="Direct link to iOS/iPadOS app" title="Direct link to iOS/iPadOS app" translate="no">​</a></h3>
 <p>The rewritten app (on Testflight) actually looks really good. It is much more stable and works more consistently. It is much more feature limited than the browser or the desktop versions, and I like this approach. It is a personal preference though; I don't expect to do full-blown editing on my mobile devices, and don't need the rest of the features. My priority is to be able to capture and retrieve information quickly. Both of which I am able to do now.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="desktop-version">Desktop version<a href="https://benjypng.github.io/blogseq/2025/11/28/first-blog-post#desktop-version" class="hash-link" aria-label="Direct link to Desktop version" title="Direct link to Desktop version" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="desktop-version">Desktop version<a href="https://benjypng.github.io/seqlog/2025/11/28/first-blog-post#desktop-version" class="hash-link" aria-label="Direct link to Desktop version" title="Direct link to Desktop version" translate="no">​</a></h3>
 <p>As I'm actively working on porting over plugins to the DB version, I've been using the desktop app instead of the browser one. Once again, I've not had any problems so far. I keep Logseq open throghout the course of the day, and never faced any data loss issues so far.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tags-vs-pages">Tags vs Pages<a href="https://benjypng.github.io/blogseq/2025/11/28/first-blog-post#tags-vs-pages" class="hash-link" aria-label="Direct link to Tags vs Pages" title="Direct link to Tags vs Pages" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tags-vs-pages">Tags vs Pages<a href="https://benjypng.github.io/seqlog/2025/11/28/first-blog-post#tags-vs-pages" class="hash-link" aria-label="Direct link to Tags vs Pages" title="Direct link to Tags vs Pages" translate="no">​</a></h3>
 <p>In this area, I admit that I'm still trying to discover the best way to use the new tags. One of the more challenging aspects of using Logseq is that it is not very opinionated on how you should use its features. What I've discovered so far is that tags allow the user to define a consistent set of properties across blocks, but the user needs to determine how this feature can be useful. There are pre-defined tags such as <code>#Journal</code> for journal pages or <code>#Code</code> for code blocks and you can define properties for these tags. For example, if you navigate to the <code>#Code</code> tag page, you will be able to see a list of code blocks, and filter/organise by language. This is really useful personally, as I can quickly find different code snippets I've written before.</p>
 <p>Once the DB version is sufficiently propagated, it will be interesting to see how the community fully leverages on this feature for their workflows.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://benjypng.github.io/blogseq/2025/11/28/first-blog-post#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="conclusion">Conclusion<a href="https://benjypng.github.io/seqlog/2025/11/28/first-blog-post#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion" translate="no">​</a></h3>
 <p>From what I have observed so far, the decision to rewrite the app to use a proper database seems to have its benefits. Users have been frustrated by how long it took, and that communication has not been very consistent. This is in spite of the very <a href="https://github.com/logseq/logseq/commits/master/" target="_blank" rel="noopener noreferrer" class="">active development</a> made by the dev team.</p>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="authors-note">Author's Note<a href="https://benjypng.github.io/blogseq/2025/11/28/first-blog-post#authors-note" class="hash-link" aria-label="Direct link to Author's Note" title="Direct link to Author's Note" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="authors-note">Author's Note<a href="https://benjypng.github.io/seqlog/2025/11/28/first-blog-post#authors-note" class="hash-link" aria-label="Direct link to Author's Note" title="Direct link to Author's Note" translate="no">​</a></h4>
 <p>This is the first post of this blog. I hope to add to the discourse around Logseq as an active user and plugin developer, to provide a more accessible and transparent view of Logseq's progress. I am not a member of the development team.</p>]]></content>
         <author>
             <name>benjypng</name>

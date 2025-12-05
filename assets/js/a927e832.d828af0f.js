@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkblogseq=globalThis.webpackChunkblogseq||[]).push([[800],{1376:e=>{e.exports=JSON.parse('{"authors":[{"name":"benjypng","url":"https://github.com/benjypng","page":{"permalink":"/blogseq/authors/benjypng"},"key":"benjypng","count":3}]}')}}]);
