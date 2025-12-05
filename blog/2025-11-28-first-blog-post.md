@@ -9,6 +9,8 @@ I have been using Logseq DB for the past 2 weeks across 4 devices: 2 Macbooks, 1
 
 Sync has been much more stable across my devices, compared to the MD version. Behaviour is more consistent, and my data syncs more reliably. There are occassions where I've had to manually trigger a sync (using the `Sync Now` button) but other than that, I've not experienced any data loss so far.
 
+<!--truncate-->
+
 ### iOS/iPadOS app
 
 The rewritten app (on Testflight) actually looks really good. It is much more stable and works more consistently. It is much more feature limited than the browser or the desktop versions, and I like this approach. It is a personal preference though; I don't expect to do full-blown editing on my mobile devices, and don't need the rest of the features. My priority is to be able to capture and retrieve information quickly. Both of which I am able to do now.

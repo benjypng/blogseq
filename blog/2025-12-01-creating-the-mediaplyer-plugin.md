@@ -11,6 +11,8 @@ I can't recall what was the older plugin, but given that locally uploaded media 
 
 The plugin SDK has been updated to `v0.2.8`. I've also decided to use `npm` instead of `pnpm` for development due to stability purposes.
 
+<!--truncate-->
+
 ### Approach
 
 There should be 2 main features for the plugin:

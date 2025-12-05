@@ -9,6 +9,8 @@ My OpenAI subscription was ending, and given the recent hype around Nano Banana 
 
 See if it is any good at doing up `README`s for my plguins.
 
+<!--truncate-->
+
 ### Setting Up
 
 1. Sign up for a paid Gemini account
