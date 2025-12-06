@@ -15,19 +15,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      # 1. Use the setup-bun action
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: 20
-          cache: npm
+          # Specify the desired Bun version
+          bun-version: latest # or '1.1.9' for a specific version
 
+      # 2. Configure Git identity (No change needed here)
       - name: Configure Git identity
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - run: npm ci
-      - run: npm run build
-      - run: npm run deploy
+      # 3. Replace 'npm ci' with 'bun install'
+      - run: bun install
+
+      # 4. Replace 'npm run build' with 'bun run build'
+      - run: bun run build
+
+      # 5. Replace 'npm run deploy' with 'bun run deploy'
+      - run: bun run deploy
         env:
           GIT_USER: github-actions[bot]
           GIT_PASS: ${{ secrets.GITHUB_TOKEN }}
