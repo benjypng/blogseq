@@ -73,16 +73,16 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/social-card.jpg",
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
       title: "Blogseq",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "Blogseq Logo",
+        src: "img/logo_light.jpg",
+        srcDark: "img/logo_dark.jpg",
       },
       items: [
         { to: "/", label: "Blog", position: "left" },
@@ -93,7 +93,7 @@ const config: Config = {
           label: "Plugin Docs",
         },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/benjypng",
           label: "GitHub",
           position: "right",
         },
