@@ -93,6 +93,11 @@ const config: Config = {
           label: "Plugin Docs",
         },
         {
+          to: "https://discuss.logseq.com/t/logseq-db-changelog/30013",
+          label: "Logseq DB Changelog",
+          position: "left",
+        },
+        {
           href: "https://github.com/benjypng",
           label: "GitHub",
           position: "right",
