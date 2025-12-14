@@ -4,10 +4,27 @@
         <title>Blogseq Blog</title>
         <link>https://benjypng.github.io/blogseq</link>
         <description>Blogseq Blog</description>
-        <lastBuildDate>Sat, 06 Dec 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 11 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Handling properties as a plugin]]></title>
+            <link>https://benjypng.github.io/blogseq/2025/12/11/handling-props-as-plugin</link>
+            <guid>https://benjypng.github.io/blogseq/2025/12/11/handling-props-as-plugin</guid>
+            <pubDate>Thu, 11 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[A zoterolocal plugin user encountered issues when using the plugin on an existing graph, at a time when the plugin was still under active development. After several rounds of patient troubleshooting by the user, I suspected the issue might be related to properties that had been created by earlier versions of the plugin.]]></description>
+            <content:encoded><![CDATA[<p>A zoterolocal plugin user encountered issues when using the plugin on an existing graph, at a time when the plugin was still under active development. After several rounds of patient troubleshooting by the user, I suspected the issue might be related to properties that had been created by earlier versions of the plugin.</p>
+<p>One of the improvements introduced with Logseq DB is typed properties, where a property’s type can be pre-defined. These do not need to be used together with tags, though they can be. The main benefit is a more structured and predictable graph.</p>
+<p>The zoterolocal plugin relies heavily on properties, and part of its setup involves pre-defining property types. As part of the troubleshooting process, I needed a way to isolate the properties created by the plugin so that they could be safely removed.</p>
+<p>When a plugin creates a property, Logseq associates that property with the plugin via the <code>ident</code> field on the property object. This can be inspected by calling <code>await logseq.Editor.getAllProperties()</code>.</p>
+<p>From inspection, the <code>ident</code> field appears to follow the structure <code>:plugin.property..&lt;plugin-name&gt;</code>. By filtering properties using this pattern, it is possible to isolate those created by a specific plugin.</p>
+<p>The next step was to remove these properties. I initially tried <code>await logseq.Editor.removeProperty()</code>, but this does not appear to apply to DB properties.</p>
+<p>Since each property is represented internally as its own page, deleting the corresponding page works as expected. Using <code>await logseq.Editor.deletePage()</code> successfully removes these properties.</p>
+<p>Logseq automatically prevents deletion of built-in properties. Attempting to do so results in the error <code>Built-in page cannot be deleted</code>. This surfaced an overlap between Logseq and Zotero, as both use the <code>code</code> and <code>tags</code> properties.</p>
+<p>For the plugin, I remapped <code>code</code> to <code>zotero-code</code> to avoid conflicts. The <code>tags</code> property is shared between Logseq and the plugin, so it was left unchanged.</p>
+<p>Managing typed properties in Logseq DB requires plugin authors to account for how properties are created, identified, and removed over time. Clear namespacing and an understanding of built-in property constraints help reduce unintended conflicts when plugins evolve or are used on existing graphs.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Logseq updates]]></title>
             <link>https://benjypng.github.io/blogseq/2025/12/06/logseq-updates</link>
