@@ -36,32 +36,22 @@ switch (txMeta.outlinerOp) {
 I tried other approaches, but could not get them to work. Strangely, when I got up in the middle of the night to go to the bathroom, I suddenly thought of a much simpler approach. What if I grab the UUID of the block **when** it is inserted, and then immediately grab the previous sibling. So I landed on the implementation below:
 
 ```typescript
-export const startInlineParsing = () => {
-  logseq.DB.onChanged(async ({ blocks, txMeta }) => {
-    if (!txMeta || !txMeta.outlinerOp || !blocks[0]) return
+switch (txMeta.outlinerOp) {
+  case 'insert-blocks': {
+    const currBlkUuid = await logseq.Editor.checkEditing()
+    if (!currBlkUuid) return
 
-    switch (txMeta.outlinerOp) {
-      case 'save-block': {
-        break
-      }
+    const prevSiblingBlk = await logseq.Editor.getPreviousSiblingBlock(
+      currBlkUuid as string,
+    )
+    if (!prevSiblingBlk) return
 
-      case 'insert-blocks': {
-        const currBlkUuid = await logseq.Editor.checkEditing()
-        if (!currBlkUuid) return
-
-        const prevSiblingBlk = await logseq.Editor.getPreviousSiblingBlock(
-          currBlkUuid as string,
-        )
-        if (!prevSiblingBlk) return
-
-        const newContent = await parse.inlineParsing(prevSiblingBlk)
-        if (newContent) {
-          await logseq.Editor.updateBlock(prevSiblingBlk.uuid, newContent)
-        }
-        break
-      }
+    const newContent = await parse.inlineParsing(prevSiblingBlk)
+    if (newContent) {
+      await logseq.Editor.updateBlock(prevSiblingBlk.uuid, newContent)
     }
-  })
+    break
+  }
 }
 ```
 
