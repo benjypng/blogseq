@@ -1,6 +1,6 @@
 ---
-  title: Handling properties as a plugin  
-  authors: [benjypng]  
+title: Handling properties as a plugin  
+date: 2025-12-11
 ---
 
 A zoterolocal plugin user encountered issues when using the plugin on an existing graph, at a time when the plugin was still under active development. After several rounds of patient troubleshooting by the user, I suspected the issue might be related to properties that had been created by earlier versions of the plugin.

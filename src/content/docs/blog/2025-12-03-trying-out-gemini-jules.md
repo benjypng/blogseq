@@ -1,6 +1,6 @@
 ---
 title: Trying out Gemini Jules
-authors: [benjypng]
+date: 2025-12-03
 ---
 
 My OpenAI subscription was ending, and given the recent hype around Nano Banana Pro, I decided to switch over to Gemini. I've never heard of [Jules](https://jules.google.com) but since I am in the midst of documenting my plugins better, I decided to give it a try.

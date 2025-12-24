@@ -1,6 +1,6 @@
 ---
 title: Logseq updates
-authors: [benjypng]
+date: 2025-12-06
 ---
 
 Across the different platforms (Discord, Reddit, X, Discourse), Discord appears to be the most active. It is also where the team engages most frequently with users. Because activity on the other platforms is comparatively low, it can give the impression that there is limited communication from the developers. However, Logseq remains active as an open-source project, and recent commits on the [master branch](https://github.com/logseq/logseq/commits/master/) continue at a steady pace.

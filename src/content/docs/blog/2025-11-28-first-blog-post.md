@@ -1,6 +1,6 @@
 ---
 title: Experience using Logseq in the last 2 weeks
-authors: [benjypng]
+date: 2025-11-28
 ---
 
 I have been using Logseq DB for the past 2 weeks across 4 devices: 2 Macbooks, 1 iPad and 1 iPhone. Below are my findings:
