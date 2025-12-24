@@ -1,6 +1,6 @@
 ---
 title: Simulating the mutation observer
-authors: [benjypng]
+date: 2025-12-15
 ---
 
 The `logseq-datenlp-plugin` makes use of a `MutationObserver` in order to detect when to start parsing a block for any date related phrases using natural language processing (NLP). With the observer, the plugin is able to only parse when the user creates a new block, by pressing `Enter`. However, this requires monitoring the DOM, and within the plugin sandbox, this is not ideal. 

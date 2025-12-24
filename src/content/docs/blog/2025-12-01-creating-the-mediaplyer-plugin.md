@@ -1,6 +1,6 @@
 ---
 title: Creating the logseq-mediaplayer-plugin
-authors: [benjypng]
+date: 2025-12-01
 ---
 
 A user on Discord asked about an older plugin that allows a user to insert timestamps for their own uploaded videos. This is natively available for embedded YouTube videos, but not uploaded files.

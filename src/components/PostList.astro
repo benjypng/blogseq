@@ -1,0 +1,118 @@
+---
+import { getCollection } from 'astro:content';
+import { CardGrid } from '@astrojs/starlight/components';
+
+const allDocs = await getCollection('docs');
+
+const posts = allDocs
+  .filter((doc) => doc.id.startsWith('blog/'))
+  .sort((a, b) => {
+    const dateA = a.data.date
+    const dateB = b.data.date
+    return dateB - dateA; 
+  });
+
+const formatDate = (date: Date | undefined) => {
+  if (!date) return '';
+  return new Intl.DateTimeFormat('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric',
+  }).format(date);
+};
+
+---
+
+<CardGrid>
+  {posts.map((post) => (
+    <a href={`/${post.id}/`} class="post-card">
+      <div class="card-content">
+        <div class="meta">
+          <time datetime={post.data.date?.toISOString()}>
+            {formatDate(post.data.date)}
+          </time>
+        </div>
+        <h3 class="title">{post.data.title}</h3>
+        <div class="read-more">Read article &rarr;</div>
+      </div>
+    </a>
+  ))}
+</CardGrid>
+
+<style>
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    /* Uses the standard card border color */
+    border: 1px solid var(--sl-color-gray-5); 
+    background-color: var(--sl-color-black);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .post-card:hover {
+    border-color: var(--sl-color-accent-high);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-3);
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .tags span {
+    background-color: var(--sl-color-gray-6);
+    color: var(--sl-color-gray-2);
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .title {
+    margin-top: 0 !important; 
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--sl-color-white);
+    margin-bottom: 0.5rem !important;
+  }
+
+  .desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--sl-color-gray-3);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+
+  .read-more {
+    margin-top: auto;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--sl-color-accent);
+  }
+
+  .post-card:hover .read-more {
+    color: var(--sl-color-accent-high);
+    text-decoration: underline;
+  }
+</style>
