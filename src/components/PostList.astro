@@ -25,7 +25,7 @@ const formatDate = (date: Date | undefined) => {
 
 <CardGrid>
   {posts.map((post) => (
-    <a href={`/${post.id}/`} class="post-card">
+    <a href={`/blogseq/${post.id}/`} class="post-card">
       <div class="card-content">
         <div class="meta">
           <time datetime={post.data.date?.toISOString()}>
