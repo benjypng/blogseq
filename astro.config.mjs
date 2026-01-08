@@ -1,31 +1,6 @@
 import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
-import fs from 'node:fs'
-import path from 'node:path'
 import logseq from 'astroplugin-logseq'
-
-const getBlogSidebar = () => {
-  const blogDir = 'src/content/docs/blog'
-  const files = fs
-    .readdirSync(blogDir)
-    .filter((f) => f.endsWith('.md') || f.endsWith('.mdx'))
-  const items = files.map((file) => {
-    const content = fs.readFileSync(path.join(blogDir, file), 'utf-8')
-    const titleMatch = content.match(/^title:\s*(.+)$/m)
-    const dateMatch = content.match(/^date:\s*(.+)$/m)
-    const title = titleMatch ? titleMatch[1].replace(/['"]/g, '').trim() : file
-    const dateStr = dateMatch
-      ? dateMatch[1].replace(/['"]/g, '').trim()
-      : '1970-01-01'
-    return {
-      label: title,
-      link: `blog/${file.replace(/\.mdx?$/, '')}/`,
-      dateObj: new Date(dateStr),
-    }
-  })
-  items.sort((a, b) => b.dateObj - a.dateObj)
-  return items.map(({ label, link }) => ({ label, link }))
-}
 
 export default defineConfig({
   site: 'https://benjypng.github.io',
@@ -34,6 +9,7 @@ export default defineConfig({
     logseq({
       token: import.meta.env.VITE_LOGSEQ_TOKEN,
       pollingInterval: 500,
+      dateRef: 'publish-date',
       targets: [
         {
           tag: 'readme',
@@ -64,7 +40,7 @@ export default defineConfig({
       sidebar: [
         {
           label: 'Blog',
-          items: getBlogSidebar(),
+          autogenerate: { directory: 'blog' },
           collapsed: false,
         },
         {
