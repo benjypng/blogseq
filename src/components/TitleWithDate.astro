@@ -1,0 +1,30 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+
+const { entry } = Astro.locals.starlightRoute;
+const { date } = entry.data; // Access frontmatter
+
+const formattedDate = date ? new Date(date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}) : null;
+---
+
+<div class="title-wrapper">
+  <Default {...Astro.props} />
+  
+  {formattedDate && (
+    <div style="margin-top: -0.5rem; margin-bottom: 1rem; color: var(--sl-color-gray-3); font-size: 0.9rem;">
+      Published on {formattedDate}
+    </div>
+  )}
+</div>
+
+<style>
+  .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+</style>

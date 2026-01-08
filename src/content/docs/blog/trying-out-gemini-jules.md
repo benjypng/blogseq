@@ -1,25 +1,25 @@
 ---
 title: Trying out Gemini Jules
-date: 2025-12-03
+date: Wed Dec 03 2025 00:00:00 GMT+0800 (Singapore Standard Time)
 ---
+
 
 My OpenAI subscription was ending, and given the recent hype around Nano Banana Pro, I decided to switch over to Gemini. I've never heard of [Jules](https://jules.google.com) but since I am in the midst of documenting my plugins better, I decided to give it a try.
 
 <!--truncate-->
 
-### Aim
+Aim
 
 See if it is any good at doing up `README`s for my plguins.
 
-### Setting Up
+Setting Up
+  - Sign up for a paid Gemini account
+  - Navigate to https://jules.google.com
+  - Connect GitHub account
+  - Select plugin repository
+  - Prompt Jules to create a `README`
 
-1. Sign up for a paid Gemini account
-2. Navigate to https://jules.google.com
-3. Connect GitHub account
-4. Select plugin repository
-5. Prompt Jules to create a `README`
-
-### Results
+Results
 
 It started off by trying to run `npm run build`, which failed for some reason. It then tried `npm run install` and then `npm run build`. But since it has no Logseq instance to attach to, I doubt that it will have been any useful. But it then started suggesting changes to the existing `README`, and proposed a [PR](https://github.com/benjypng/logseq-mediatimestamp-plugin/pull/1). I okay-ed and it proceeded to create a branch for the PR and inserted a comment:
 
@@ -39,4 +39,4 @@ New to Jules? Learn more at jules.google/docs.
 
 Since it is just a `README`, I went ahead to merge the PR and the final result is as per below. Interestingly, it even generated shields for the README. Some parts are not entirely accurate, but I would say it did a pretty good job. Will definitely continue to try it out.
 
-*You can compare the [current version](https://github.com/benjypng/logseq-mediatimestamp-plugin/blob/main/README.md) with the previous commit [here](https://github.com/benjypng/logseq-mediatimestamp-plugin/blob/cd75b7b1a915857d11be6a214d32e88d7fb2e1ea/README.md).*
+You can compare the [current version](https://github.com/benjypng/logseq-mediatimestamp-plugin/blob/main/README.md) with the previous commit [here](https://github.com/benjypng/logseq-mediatimestamp-plugin/blob/cd75b7b1a915857d11be6a214d32e88d7fb2e1ea/README.md).*

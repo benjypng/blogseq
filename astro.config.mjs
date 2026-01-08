@@ -16,7 +16,7 @@ export default defineConfig({
           directory: 'src/content/docs/readme',
         },
         {
-          tag: 'blog',
+          tag: 'blogseq',
           directory: 'src/content/docs/blog',
         },
       ],
@@ -29,6 +29,9 @@ export default defineConfig({
         replacesTitle: true,
       },
       plugins: [],
+      components: {
+        PageTitle: './src/components/TitleWithDate.astro',
+      },
       customCss: ['./src/styles/custom.css'],
       social: [
         {
