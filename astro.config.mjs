@@ -1,4 +1,3 @@
-// @ts-check
 import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
 import fs from 'node:fs'
@@ -7,7 +6,6 @@ import logseq from 'astroplugin-logseq'
 
 const getBlogSidebar = () => {
   const blogDir = 'src/content/docs/blog'
-
   const files = fs
     .readdirSync(blogDir)
     .filter((f) => f.endsWith('.md') || f.endsWith('.mdx'))
@@ -25,8 +23,6 @@ const getBlogSidebar = () => {
       dateObj: new Date(dateStr),
     }
   })
-
-  // @ts-expect-error
   items.sort((a, b) => b.dateObj - a.dateObj)
   return items.map(({ label, link }) => ({ label, link }))
 }
@@ -37,11 +33,11 @@ export default defineConfig({
   integrations: [
     logseq({
       token: import.meta.env.VITE_LOGSEQ_TOKEN,
-      pollingInterval: 1000,
+      pollingInterval: 500,
       targets: [
         {
-          tag: 'public',
-          directory: 'src/content/docs/guides',
+          tag: 'readme',
+          directory: 'src/content/docs/readme',
         },
         {
           tag: 'blog',
@@ -73,7 +69,7 @@ export default defineConfig({
         },
         {
           label: 'Plugin README',
-          autogenerate: { directory: 'guides' },
+          autogenerate: { directory: 'readme' },
           collapsed: false,
         },
       ],
