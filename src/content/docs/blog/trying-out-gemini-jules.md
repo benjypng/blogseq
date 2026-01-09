@@ -8,18 +8,18 @@ My OpenAI subscription was ending, and given the recent hype around Nano Banana 
 
 <!--truncate-->
 
-Aim
+### Aim
 
 See if it is any good at doing up `README`s for my plguins.
 
-Setting Up
+### Setting Up
   - Sign up for a paid Gemini account
   - Navigate to https://jules.google.com
   - Connect GitHub account
   - Select plugin repository
   - Prompt Jules to create a `README`
 
-Results
+### Results
 
 It started off by trying to run `npm run build`, which failed for some reason. It then tried `npm run install` and then `npm run build`. But since it has no Logseq instance to attach to, I doubt that it will have been any useful. But it then started suggesting changes to the existing `README`, and proposed a [PR](https://github.com/benjypng/logseq-mediatimestamp-plugin/pull/1). I okay-ed and it proceeded to create a branch for the PR and inserted a comment:
 

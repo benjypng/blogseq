@@ -8,15 +8,15 @@ Across the different platforms (Discord, Reddit, X, Discourse), Discord appears 
 
 Below are a few updates shared on Discord over the past week that I found noteworthy.
 
-RTC and iOS updates
+### RTC and iOS updates
 
 ZhiYuan mentioned that an [update](https://discord.com/channels/725182569297215569/725182570131751005/1446517435103449260) for RTC and the iOS app is expected soon. At this point, only early testers are using RTC and the rewritten iOS app, and they are aware of the associated instability and data-loss risks. Based on the discussion, it appears that broader availability may be under consideration, though the details are not yet confirmed.
 
-Assets-related improvements
+### Assets-related improvements
 
 My [Zotero plugin](https://github.com/benjypng/logseq-zoterolocal-plugin) currently cannot open PDFs outside the graph within Logseq; they default to the system viewer. Charlie is working on an [existing PR](https://github.com/logseq/logseq/pull/12244) that addresses this limitation. If merged, this may improve how external assets are handled.
 
-Notes on development approach
+### Notes on development approach
 
 There was a brief discussion between futurized (a former team member) and Tienson regarding architectural direction. It offered some insight into how the team may be thinking about Logseq beyond a conventional note-taking workflow. Tienson commented:
 
